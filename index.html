@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nexotek - Double Écran Portable 2K</title>
+  <title>Nexotek - Logiciels Comptables d’Occasion</title>
   <link rel="stylesheet" href="styles.css" />
   <style>
     body {
@@ -12,6 +12,13 @@
       background-color: #111;
       color: white;
     }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
     header {
       display: flex;
       align-items: center;
@@ -28,6 +35,7 @@
       text-decoration: none;
       font-weight: bold;
     }
+
     .hero {
       text-align: center;
       padding: 40px 20px;
@@ -41,6 +49,7 @@
       max-width: 600px;
       margin: 0 auto 20px;
     }
+
     .btn {
       display: inline-block;
       padding: 12px 24px;
@@ -51,21 +60,29 @@
       font-weight: bold;
       margin: 20px 0;
     }
+
     section {
       padding: 30px 20px;
       text-align: center;
     }
-    section img {
+
+    .feature {
+      margin-bottom: 50px;
+    }
+
+    .feature img {
       width: 100%;
       max-width: 500px;
       border-radius: 8px;
       margin: 20px 0;
     }
-    section p {
+
+    .feature p {
       font-size: 16px;
       max-width: 700px;
-      margin: 0 auto 20px;
+      margin: 0 auto;
     }
+
     footer {
       background-color: #1a1a1a;
       text-align: center;
@@ -77,6 +94,42 @@
       margin: 0 10px;
       text-decoration: none;
     }
+
+    /* Améliorations pour les écrans larges */
+    @media (min-width: 768px) {
+      .hero h1 {
+        font-size: 48px;
+      }
+      .hero p,
+      section p {
+        font-size: 20px;
+      }
+      .btn {
+        font-size: 18px;
+        padding: 14px 28px;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .feature {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 40px;
+        text-align: left;
+      }
+      .feature:nth-child(even) {
+        flex-direction: row-reverse;
+      }
+      .feature img {
+        max-width: 45%;
+        margin: 0;
+      }
+      .feature p {
+        max-width: 50%;
+        margin: 0;
+      }
+    }
   </style>
 </head>
 <body>
@@ -87,27 +140,36 @@
     </nav>
   </header>
 
-  <div class="hero">
-    <h1>Double Écran Portable 2K Nexotek</h1>
-    <p>Optimisez votre productivité en déplacement ou au bureau grâce à notre écran 2K ultra-fin, léger et économe en énergie.</p>
-    <a class="btn" href="paiement.html">Acheter maintenant – 119€</a>
+  <div class="hero container">
+    <h1>Logiciels Comptables EBP à Prix Réduit</h1>
+    <p>Nous rachetons les licences EBP inutilisées auprès d’entreprises ou de cabinets fermés, et vous les proposons à des tarifs avantageux.</p>
+    <a class="btn" href="paiement.html">Acheter EBP – à partir de 119€</a>
   </div>
 
-  <section id="produit">
+  <section id="produit" class="container">
     <h2>Pourquoi choisir Nexotek ?</h2>
-    <img src="nexotek_product_1.jpg" alt="Double écran attaché à un laptop" />
-    <p>Avec Nexotek, vos collaborateurs bénéficient immédiatement d’un second écran pratique, compact et 100% mobile. Plus besoin de jongler entre les fenêtres : vos équipes gagnent en efficacité, fluidité et confort de travail, même en déplacement.</p>
 
-    <img src="nexotek_product_2.jpg" alt="Trois écrans Nexotek" />
-    <p>Équipez vos salariés d’un outil professionnel pensé pour le télétravail, les rendez-vous clients, les salons ou les déplacements réguliers. Nexotek est compatible avec la majorité des ordinateurs portables et se connecte en quelques secondes.</p>
+    <div class="feature">
+      <img src="ebp_screenshot_1.jpg" alt="Capture d'écran du logiciel EBP" />
+      <p>Accédez à des versions complètes de logiciels comptables EBP à un prix réduit. Idéal pour les indépendants, TPE et PME qui souhaitent optimiser leur budget.</p>
+    </div>
 
-    <img src="nexotek_product_3.jpg" alt="Utilisation en réunion" />
-    <p>Design élégant, léger et pliable à 360°, l’écran Nexotek s’intègre parfaitement dans tout environnement pro. Il améliore la lisibilité et booste la concentration, sans occuper de place supplémentaire sur le bureau.</p>
+    <div class="feature">
+      <img src="ebp_screenshot_2.jpg" alt="Interface utilisateur EBP" />
+      <p>Toutes nos licences sont vérifiées, légales et prêtes à être activées. Bénéficiez d’une solution professionnelle sans vous ruiner.</p>
+    </div>
 
-    <img src="nexotek_product_4.jpg" alt="Vue d'ensemble du produit" />
-    <p>Nos écrans consomment 5x moins d'énergie que les moniteurs traditionnels, ce qui se traduit par une réduction directe des coûts électriques pour votre entreprise. Équipez malin, investissez dans l'efficacité durable.</p>
+    <div class="feature">
+      <img src="ebp_screenshot_3.jpg" alt="Utilisation en entreprise" />
+      <p>Que ce soit pour la comptabilité, la gestion commerciale ou la facturation, nos logiciels d’occasion offrent les mêmes fonctionnalités que les licences neuves.</p>
+    </div>
 
-    <a class="btn" href="paiement.html">Acheter maintenant – 119€</a>
+    <div class="feature">
+      <img src="ebp_screenshot_4.jpg" alt="Logiciel EBP sur ordinateur portable" />
+      <p>Faites un achat malin et responsable en donnant une seconde vie à un logiciel inutilisé. Une solution écologique et économique.</p>
+    </div>
+
+    <a class="btn" href="paiement.html">Acheter EBP – à partir de 119€</a>
   </section>
 
   <footer>
